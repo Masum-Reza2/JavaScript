@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using loops in arrays</title>
+</head>
+
+<body>
+    <script>
+        let myarray = [1, 2, 3, 5, 10];
+        for (let i = 0; i < myarray.length; i++) {
+            console.log(myarray[i], ' is a', typeof myarray[i]);
+        }
+
+        myarray.forEach(element=>{
+            console.log("the square of ", element, "is = ", element*element)
+        })
+
+        // converting into array, Array.from() method
+        //it will be use to convert html collection into an Array
+        let name = "My name is Masum Reza";
+        let farry = Array.from(name);
+        console.log(farry);
+
+        for (let key of myarray) {
+            console.log(key, "is a ", typeof key);
+        }
+
+        for (let key in myarray) {
+            console.log(myarray[key], "is not a ", typeof myarray[key]," and this is false a statement")
+        }
+    </script>
+</body>
+
+</html>

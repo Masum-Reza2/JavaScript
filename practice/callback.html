@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            color: red;
+            text-align: center;
+            font-size: 2rem;
+            text-shadow: 2px 2px 2px black;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        let p1 = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                document.body.insertAdjacentHTML('beforeend', '<p>Promise 0ne fired</p>')
+                // resolve('p1 successfull')
+                reject('promise 1 got some error')
+            }, 1000);
+        })
+        let p2 = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                document.body.insertAdjacentHTML('beforeend', '<p>Promise 2 fired</p>')
+                // resolve('p2 successfull')
+                reject('promise 2 got some error')
+            }, 2000);
+        })
+        let p3 = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                document.body.insertAdjacentHTML('beforeend', '<p>Promise Three fired</p>')
+                // resolve('p3 successfull')
+                reject('promise 3 got some error')
+            }, 3000);
+        })
+        let p4 = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                document.body.insertAdjacentHTML('beforeend', '<p>Promise 4 fired</p>')
+                // resolve('p4 successfull')
+                reject('promise 4 got some error')
+            }, 4000);
+        })
+        let p5 = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                document.body.insertAdjacentHTML('beforeend', '<p>Promise Five fired</p>')
+                // resolve('p5 successfull')
+                reject('promise 5 got some error')
+            }, 5000);
+        })
+
+
+        let ALL_Promise = Promise.reject([p1, p2, p3, p4, p5]);
+        ALL_Promise.then((value)=>{
+            console.log(value)
+        },(value)=>{
+            console.log(value)
+        })
+    </script>
+</body>
+
+</html>

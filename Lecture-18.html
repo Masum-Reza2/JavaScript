@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more array methods</title>
+</head>
+
+<body>
+    <script>
+        //  Checking if Array Contains an Element
+        let myarray = ['item1', 'item2', 'item3', 'item4'];
+        let ck = myarray.includes('item2', myarray[1]);
+        let ck2 = myarray.includes('item4');
+        console.log(ck);
+        console.log(ck2);
+
+        //delete operator 
+        let myarray2 = ['item1', 'item2', 'item3', 'item4', 'item5', 'item6'];
+        delete myarray2[0];
+        console.log(myarray2);
+        console.log(myarray2.length); //the length remains unchanged while we delete element from array 
+
+        // concat() add one or more arrays 
+        let newarray = myarray.concat(myarray2);
+        console.log(newarray); //we can concat two oe more arrays
+
+        let myarray3 = ['item7', 'item8', 'item9', 'item10', 'item11', 'item12'];
+        let newarray2 = myarray.concat(myarray2, myarray3);
+        console.log(newarray2);
+
+        // sort () method.
+        //it modifies the original array and it will sort alphabetically like(1...2...3...4...5...6..7..8..9..)
+        //Not in ascending or discanding order
+        let num = [1, 12, 8, 34, 9, 7, 22, 67, 45, 89, 56, 5, 6];
+        num.sort();
+        console.log(num);
+
+        // to sort ascending or discanding order we are to use a function
+        let compare = (a,b) => a-b //to sort discanding order type b-a
+        num.sort(compare);
+        console.log(num);
+
+        // reverse () method 
+        console.log(num.reverse())
+
+        // splice() method 
+        // takes more than 3 argument
+        // first argument for (starting index for delete)
+        // second argument to(deletecount)
+        // third and above arguments to adding new elements
+        let spl_array = ['item1', 'item2', 'item3', 'item4', 'item5', 'item6'];
+        // spl_array.splice(3, spl_array.length, 1020, 1030, 1040, 1050);
+        let ck5 = spl_array.splice(3, spl_array.length, 1020, 1030, 1040, 1050);
+        console.log(spl_array);
+        console.log(ck5); //it's return value is the deleted items
+
+        // slice () method it never modifies the original array but creat a new array
+        let slc_array = ['item6', 'item5', 'item4', 'item3', 'item2', 'item1'];
+        let new_slc_array = slc_array.slice(2,slc_array.indexOf('item1'));
+        console.log(new_slc_array);
+
+    </script>
+</body>
+
+</html>

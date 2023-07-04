@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>children of element</title>
+</head>
+<body>
+    <div>
+        <p>this is me and i'm great!</p>
+        <span>Sibling</span>
+    </div>
+
+    <script>
+        console.log(document.body.firstChild);
+        console.log(document.body.lastChild);
+        console.log(document.body.childNodes);
+        
+        console.log(document.head.firstChild)
+        console.log(document.head.lastChild)
+        console.log(document.head.childNodes);
+        // we can convert the childNodes of an element into array 
+        let myarray = Array.from(document.body.childNodes);
+        console.log("the array of childnode of body is ",myarray);
+    </script>
+    </body>
+</html>

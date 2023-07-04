@@ -1,0 +1,7 @@
+body{
+    background-color: black;
+    color: rgb(45, 247, 45);
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 2px 2px 2px blue;
+}

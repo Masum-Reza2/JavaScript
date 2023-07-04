@@ -1,0 +1,12 @@
+.btn{
+    border: 2px solid red;
+    padding: 7px 14px;
+    border-radius: 8px;
+    font-size: 1.3rem;
+    color: white;
+    background: black;
+    box-shadow: 5px 4px 3px pink;
+    cursor: pointer;
+}
+.btn:hover{
+    color: bisque;}

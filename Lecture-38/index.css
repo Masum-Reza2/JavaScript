@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+}
+nav{
+    display: flex;
+    background: black;
+    margin: 0px;
+    padding: 10px;
+}
+li{
+    list-style: none;
+    color: white;
+    margin: 6px 27px;
+    padding: 5px 7px;
+}
+table{
+    /* border: 2px solid red; */
+    height: 150px;
+    width: 400px;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+td{
+    border: 2px solid black;
+    text-align: center;
+}

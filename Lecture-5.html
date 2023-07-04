@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice set - 01</title>
+</head>
+<body>
+    
+
+
+    <script>
+        // Q-1 
+        let a ="Masum";
+        let b = 65 ;
+        console.log(a);
+        console.log(b);
+        console.log(a+b); //when we add string and int it become concatinate.
+
+        // Q-2 find the data-type
+        console.log(typeof a);
+        console.log(typeof b);
+        console.log(typeof a+b); //by this code only the type of a executed and normally b added 
+        console.log(typeof (a+b));//when a and b get together(+) it become string.
+
+        const m = {
+            name : "Masum",
+            class : 13,
+            section : 'B'
+        }
+        // m = {
+        //     name : "Masum",
+        //     class : 13,
+        //     section : 'B'
+        // }  //it through error because we can not change const but we can update the inner key.
+         
+        // m = "Harry";
+        // m = "50"; // even we can not change the value of const into a string or a number even an object
+
+        // but we can update the inner key of a const by the below mentioned way
+        m['name'] = "Tabassum";
+        console.log(m);
+        m['friend'] = "shubham";
+        console.log(m);
+        //here first argument m['name'] for searching the key(if not available it craet automatically) and second argument "Tabassum" for set the data
+
+    const dict = {
+        yakka : "Hard Work",
+        appreciate : "recognize the full worth of",
+        ataraxia : "a state of freedom",
+        love : "prem",
+        devotion : "Bhakti"
+    }
+    // we can access inner key of an object in two ways 
+    console.log(dict.yakka);
+    console.log(dict['yakka']);
+    </script>
+</body>
+</html>

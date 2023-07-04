@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice set</title>
+</head>
+
+<body>
+
+    <script>
+        // converting a string into a number
+        // let num = "shubam";
+        // let str = parseInt(num);
+        // console.log(typeof num);
+        // console.log(typeof str);
+
+        // Q1 age lies between 10 and 20
+        // let age = prompt("Enter your age");
+        // if(age>=10 && age<=20){
+        //     alert('Your age lies between 10 and 20');
+        // }
+        // else{
+        //     alert("your age doesn't lies between 10 and 20");
+        // };
+
+        // Q2 a number divisible by 2 and 3
+        // let num = prompt('Enter a number');
+        // num = Number.parseInt(num);
+        // if(num%2==0 && num%3==0){
+        //     console.log('the number is divisible by 2 and 3');
+        // }
+        // else{
+        //     console.log('the number is not divisible by 2 and 3');
+        // }
+
+        // Q3 number divisible 2 or 3
+        // if(num%2==0 || num%3==0){
+        //     alert('number is divisible 2 or 3')
+        // }
+        // else{
+        //     alert("not divisible by 2 or 3")
+        // }
+
+        // Q4 use ternary operator to print you can drive and you can not drive
+        // let age = prompt("what's your age");
+        // age = Number.parseInt(age);
+        // if(age<=17 && age>=0){
+        //     alert(" hey you kid you cant drive");
+        // }
+        // else if(age>=18 && age<100){
+        //     alert("hey adult you can drive");
+        // }
+        // else if(age>=100){
+        //     alert('OMG Ghost come to drive escape from here.')
+        // }
+        // else if(age<0){
+        //     alert("are you alien?")
+        // }
+        // else{
+        //     alert("thank you for co-operating")
+        // }
+
+        // switch statement 
+        let age = prompt("Whats your age")
+        switch (true) {
+            case (age>=0 && age<=18):
+                alert("you are a kid! you can't drive")
+                break;
+            case (age>=19 && age<=100):
+                alert("Hey adult you can drive")
+                break;
+            case (age<0):
+                alert("are you alien")
+                break;
+            case (age>100):
+                alert("Hey ghoost get out from here otherwise i will escape from here.")
+                break;
+
+            default:
+                alert( age<0? "Invalid age":"Thanks for co-operating")
+                break;
+        }
+
+    </script>
+</body>
+
+</html>

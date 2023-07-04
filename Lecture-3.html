@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>var let and const in js</title>
+</head>
+
+<body>
+
+    <script>
+        // var is globally scoped while let and const are block scoped
+        // var can be updated and re-declered example below >>>
+        // console.log('hello world')
+        // var a = 'masum';
+        // console.log(a);
+        // var a = 'sopna'
+        // console.log(a)
+        // a = 'marjana'
+        // console.log(a)
+
+        // let is block scoped 
+        // can be updated but not re-declered
+        let am = 'Mango';
+        console.log(am);
+        {
+            // console.log(am)
+            // when there is no let declered inside block it look above the block fox value
+
+            let am = 'banana';
+            console.log(am);
+        }
+
+        // const neither be updated nor be re-declered 
+        const tullu = 'papita';
+        // tullu = 'lutta';
+        // const tullu = 'madhobi' //it through error 
+        console.log(tullu)
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+.btn {
+    border: 2px solid;
+    color: white;
+    background-color: black;
+    text-shadow: 2px 2px 2px red;
+    padding: 13px 30px;
+    border-radius: 8px;
+    display: block;
+    margin: 100px auto;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.yellow {
+
+    border: 2px solid;
+    color: red;
+    background-color: yellow;
+    text-shadow: 2px 2px 2px red;
+    padding: 13px 30px;
+    border-radius: 8px;
+    display: block;
+    margin: 100px auto;
+    cursor: pointer;
+    font-size: 2rem;
+}

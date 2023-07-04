@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raw Practice</title>
+    <style>
+        #container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        button {
+            border: 2px solid red;
+            color: white;
+            background-color: black;
+            margin-top: 30px;
+            font-size: 2rem;
+            border-radius: 8px;
+            cursor: pointer;
+            padding: 4px 5px;
+        }
+
+        button:hover {
+            color: red;
+            border: 2px solid green;
+        }
+
+        .writeMe {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 3rem;
+            color: red;
+            text-shadow: 2px 2px 2px black;
+        }
+
+        .dark {
+            /* text-align: center;
+            margin-top: 50px;
+            font-size: 3rem; */
+            color: black;
+            text-shadow: 2px 2px 2px red;
+        }
+
+        .new {
+            display: block;
+            margin: 30px 10px;
+            color: greenyellow;
+            font-size: 1.2rem;
+        }
+
+        #blink {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .marjava {
+            color: indigo;
+            font-size: 2rem;
+            margin-top: 30px;
+            text-shadow: 2px 2px 2px black;
+        }
+
+        #intro {
+            color: indigo;
+            font-size: 2rem;
+            margin-top: 30px;
+            text-shadow: 2px 2px 2px red;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <button onclick="btn1()">click-me1</button>
+        <button onclick="btn2()">click-me2</button>
+        <button onclick="btn3()">click-me3</button>
+        <button onclick="btn4()">click-me4</button>
+        <button onclick="btn5()">click-me5</button>
+    </div>
+    <div id="blink">
+        <!-- <button class="new" onclick="timer1()">blibking On</button> -->
+        <button class="new" onclick="timeroff()">blibking Off</button>
+    </div>
+    <div class="writeMe">
+        waiting for your click!
+    </div>
+
+    <div id="intro">
+        waiting...
+    </div>
+    <marquee behavior="" direction="" class="marjava">hey dear this is masum reza. And welcome to the world of
+        coding,here you will learn everything about web development, Let's code your career</marquee>
+
+    <script>
+        let writeMe = document.getElementsByClassName('writeMe')[0];
+        let chamak = () => {
+            writeMe.classList.toggle('dark');
+        }
+
+        let timer1 = setInterval(chamak, 500);
+        let timeroff = () => clearInterval(timer1);
+
+
+        let btn1 = () => {
+            writeMe.innerHTML = 'hey dear you clicked the first button';
+        };
+        let btn2 = () => {
+            writeMe.innerHTML = 'wow! no-2 button is clicked by you';
+        };
+        let btn3 = () => {
+            writeMe.innerHTML = 'OMG! you just click button no-03';
+        };
+        let btn4 = () => {
+            writeMe.innerHTML = 'oow oww! Creazy you click button no-4';
+        };
+        let btn5 = () => {
+            writeMe.innerHTML = 'That was an awesome journey you clicked last button';
+        };
+
+
+
+        let intro = document.getElementById('intro');
+        let one = () => intro.innerHTML = 'Hey Dear Looking for coding environment?';
+        let two = () => intro.innerHTML = 'Then you are on the right place!';
+        let three = () => intro.innerHTML = 'Welcome to the world of coding!';
+        let four = () => intro.innerHTML = 'here you can master of your journey!';
+        let five = () => intro.innerHTML = 'Let\'s code your career...';
+
+        let rePeat = () => {
+            setTimeout(one,1000);
+            setTimeout(two,3000);
+            setTimeout(three,5000);
+            setTimeout(four,7000);
+            setTimeout(five,9000);
+        }
+         
+        rePeat();
+        setInterval(rePeat,10000)
+    </script>
+</body>
+
+</html>

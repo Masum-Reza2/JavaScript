@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // create an array of number and take input from the user 
+        // let myarray = [];
+        // let a = prompt("Enter a number");
+        // a = Number.parseInt(a);
+        // myarray.push(a);
+        // console.log(myarray);
+
+        // create an array of number and take input from the user untill 0 is inserted
+        // let myarray = [];
+        // let a = 0;
+        // do {
+        //     a = prompt("Enter a number");
+        //     a = Number.parseInt(a);
+        //     myarray.push(a);
+        // } while (a != 0);
+        // console.log(myarray);
+
+        //create an array and filter number divisible by 10
+        // let num_array = [5, 6, 7, 10, 20, 50, 660, 76, 34, 56, 23, 45];
+        // let fil_array = num_array.filter((a)=>{
+        //     return a%10==0;
+        // })
+        // console.log(fil_array);
+
+        //make square of a given array
+        // let ex = [2,3,4,5,6];
+        // let sq_array = ex.map((element)=>{
+        //     return element*element;
+        // });
+        // console.log(sq_array);
+
+        //create factorial from a given natural array
+        let n = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        let fac_array = n.reduce((a, b) => {
+            return a * b;
+        });
+        console.log(fac_array);
+    </script>
+</body>
+
+</html>

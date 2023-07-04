@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primitives and objects in javascript</title>
+</head>
+<body>
+
+    <!-- there are 7 types of primitive data type in js
+    1)N- null
+    2)N- number
+    3)S- symbol
+    4)S- string
+    5)B- boolean
+    6)B- bigint
+    7)U- undefined
+
+    none-primitive data is object/array -->
+
+<script>
+    let a = null;
+    let b = 70;
+    let c = true; //can be false also
+    let d = BigInt("567") + BigInt('3');
+    let e = "Masum";
+    // let f = symbol('im a nice symbol');
+    let g
+    console.log(a,b,c,d,e,g);
+
+    // we can check the types of any variable by running this following command 
+    console.log(typeof a);
+    console.log(typeof b);
+    console.log(typeof c);
+    console.log(typeof d);
+    console.log(typeof e);
+
+    // none-primitive data type - objects in js
+    const item = {
+        name : "masum",
+        address : "kalenga",
+        mobile : 352932,
+        phone : 'Redmi note 10 lite'
+    }
+
+    console.log(item);
+    // to print a particular item inside the object 
+    console.log(item['name']);
+    console.log(item['address']);
+    console.log(item['mobile']);
+    console.log(item['phone']);
+
+    // similerly we can check the data type of objects by the following codes.
+    console.log(typeof item['phone']);
+    console.log(typeof item['mobile']);
+    console.log(typeof item['address'])
+
+
+</script>
+
+</body>
+</html>

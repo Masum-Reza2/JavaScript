@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        // let tullu = ['masum', 'rana', 'taqbir', 'alamin'];
+        // for (let i=0; i<tullu.length; i++) {
+        //     console.log(tullu[i], 'is a good boy')
+        // }
+        // for(let i=tullu.length; i>=0; i--){
+        //     console.log(tullu[i])
+        // }
+
+        // let num = prompt("enter a number");
+        // num = Number.parseInt(num);
+        // let sum = 0;
+        // for(let i=0; i<=num; i++){
+        //     sum+=i;
+        // }
+        // console.log("the sum of n natural number is", sum);
+
+        // let num = prompt("enter a number");
+        // num = Number.parseInt(num);
+        // while (num<50) {
+        //     console.log(num);
+        //     num++
+        // }
+        // do {
+        //     console.log(num)
+        //     num++
+        // } while (num<50);
+
+
+        // let obj = {
+        //     name:'masum',
+        //     age:22,
+        //     profession:'developer'
+        // }
+
+        // for (let key in obj) {
+        //    console.log(key, ' Of author is ', obj[key])
+        // }
+
+        // for (const iterator of object) {
+
+        // }
+        // for (let i = 1; i <= 100; i++) {
+        //     if (i % 3 === 0 && i % 5 === 0) {
+        //         console.log('FizzBuzz');
+        //     } else if (i % 3 === 0) {
+        //         console.log('Fizz');
+        //     } else if (i % 5 === 0) {
+        //         console.log('Buzz');
+        //     } else {
+        //         console.log(i);
+        //     }
+        // }
+
+
+        // Example usage:
+        // generateMultiplicationTable(5);
+
+
+        // function numberGuessingGame() {
+        //     const targetNumber = Math.floor(Math.random() * 100) + 1;
+        //     let attempts = 0;
+        //     let guess;
+
+        //     do {
+        //         guess = parseInt(prompt('Guess a number between 1 and 100:'));
+
+        //         if (isNaN(guess)) {
+        //             console.log('Invalid input. Please enter a number.');
+        //             continue;
+        //         }
+
+        //         attempts++;
+
+        //         if (guess < targetNumber) {
+        //             console.log('Too low!');
+        //         } else if (guess > targetNumber) {
+        //             console.log('Too high!');
+        //         } else {
+        //             console.log(`Congratulations! You guessed the number in ${attempts} attempts.`);
+        //         }
+        //     } while (guess !== targetNumber);
+        // }
+
+        // // Example usage:
+        // numberGuessingGame();
+
+        function printPyramid(height) {
+            for (let i = 1; i <= height; i++) {
+                let row = '';
+                for (let j = 1; j <= height - i; j++) {
+                    row += ' ';
+                }
+                for (let k = 1; k <= 2 * i - 1; k++) {
+                    row += '*';
+                }
+                console.log(row);
+            }
+        }
+
+        // Example usage:
+        printPyramid(5);
+
+
+
+    </script>
+</body>
+
+</html>

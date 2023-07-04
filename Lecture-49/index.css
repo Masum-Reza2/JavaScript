@@ -1,0 +1,71 @@
+.btn{
+    border: 2px solid seagreen ;
+    color: red;
+    background-color: black;
+    border-radius: 8px;
+    display: block;
+    margin: 5px 5px;
+    /* padding: 5px 20px; */
+    cursor: pointer;
+    font-size: 2rem;
+    text-shadow: 2px 2px 2px black;
+}
+.raw{
+    color: red;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+    font-size: 3rem;
+}
+.first{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#bookmark{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+a{
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid black;
+    margin: 4px;
+    border-radius: 8px;
+    font-size: 20px;
+    color: black;
+    background-color: darkgreen;
+    color: white;
+}
+
+/* creating a bulb */
+.TorchLight{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+.lombo{
+    height: 35px;
+    width: 150px;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: grey;
+}
+.circle{
+    border: 2px solid red;
+    height: 77px;
+    width: 31px;
+    border-radius: 20px;
+    background-color: silver;
+}
+.light{
+    height: 110px;
+    width: 260px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+.yellow{
+    background-color: yellow;
+}

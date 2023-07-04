@@ -1,0 +1,9 @@
+body{
+    text-align: center;
+    font-size: 5rem;
+    /* border: 2px solid red; */
+    width: 50%;
+    margin:50px auto;
+    color: black;
+    text-shadow: 4px 2px 1px red;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>introduction to array </title>
+</head>
+
+<body>
+    <script>
+        // An array is a data structure that allows you to store multiple values in a single variable.
+        //  These values can be of any type, such as numbers, strings, objects, or even other arrays.
+
+        // Creating an Array
+        let myarray = [1, 2, 3, 4, 5, 6];
+
+        // Accessing Array Elements
+        console.log(`the value of ${myarray[0]}st element is = `, myarray[0]); //indexing starts from 0
+        console.log(myarray[1]);
+        console.log(myarray[2]);
+        console.log(myarray[3]);
+        console.log(myarray[4]); //and so on
+
+        // Modifying Array Elements
+        console.log("the old array is = ", myarray);
+        myarray[0] = 10;
+        myarray[1] = 20;
+        myarray[2] = 30;
+        myarray[3] = 40;
+        myarray[4] = 50;
+        myarray[5] = 60;
+        console.log("The modified array is = ", myarray);
+
+        // Array Length
+        //The length property returns the number of elements in the array
+        console.log("The length of myarray is = ", myarray.length);
+
+        // Adding Elements to an Array
+        // Two commonly used methods are push() and unshift():
+        // push() adds one or more elements to the end of the array.
+        // unshift() adds one or more elements to the beginning of the array.
+        myarray.push("i'm pushed at the end");
+        console.log(myarray);
+        myarray.unshift("i'm inserted at the beginning");
+        console.log(myarray);
+
+        //  Removing Elements from an Array
+        // Two commonly used methods are pop() and shift():
+        // pop() removes the last element from the array and returns it.
+        // shift() removes the first element from the array and returns it.
+        myarray.pop();
+        console.log(myarray);
+        myarray.shift();
+        console.log(myarray);
+
+        //  Iterating over an Array
+        for (let i=0; i<myarray.length; i++) {
+            console.log("all of the arrays are printing ", myarray[i]);
+        }
+        // myarray.forEach(element => {
+        //     console.log(element, " is a good number");
+        // });
+        //  for (let key in myarray) {
+        //     console.log(myarray[key], "also ")
+        //  }
+        //  for (let element of myarray) {
+        //     console.log(element, "is not")
+        //  }
+    </script>
+</body>
+
+</html>

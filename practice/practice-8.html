@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+<body>
+    
+
+    <script>
+        // let age = prompt("Enter your age");
+        // age = parseInt(age);
+        // if(age>=0 && age<=18){
+        //     alert("hey kid go away from here, you can't");
+        // }
+        // else if(age<0){
+        //     alert("ooooh look at this is an alien");
+        // }
+        // else if(age>19 && age<=100){
+        //     alert('yay adult you can')
+        // }
+        // else if(age>100){
+        //     alert("Sorry ghosot are not allowed")
+        // }
+        // else{
+        //     alert("plz enter valid age");
+            
+        // }
+
+            // let del = confirm("Are you sure want to delete this item?");
+            // if(del==true){
+            //     alert('Deletion successful');
+            // }
+            // else{
+            //     alert('Deletion canceled');
+            // }
+                
+        let age = prompt("Enter age")
+        switch (true) {
+            case (age>=0 && age<=18):
+                alert('your age between 0 to 18');
+                break;
+            case (age>=19&& age<=100):
+                alert('your age between 19 to 100');
+                break;
+                case(age>101):
+                alert('Sorry Ghoost are not allowed');
+                break;
+                case(age<0):
+                alert('Sorry Aliens are not allowed');
+                break;
+            default:
+                console.log("thanks for co-operating")
+                break;
+        }
+    </script>
+</body>
+</html>

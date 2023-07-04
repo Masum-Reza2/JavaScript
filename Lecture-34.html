@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element only Navigation</title>
+    <style>
+        .navbar{
+            background-color: black;
+            margin: 10px;
+            padding: 1px;
+        }
+        ul{
+            display: flex;
+        }
+        li{
+            list-style: none;
+            color: white;
+            border: 2px solid red;
+            border-radius: 8px;
+            margin: 5px 20px;
+            padding: 4px 14px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact-Us</li>
+            <li>More</li>
+        </ul>
+    </nav>
+    <nav class="navbar">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact-Us</li>
+            <li>More</li>
+        </ul>
+    </nav>
+    <nav class="navbar">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact-Us</li>
+            <li>More</li>
+        </ul>
+    </nav>
+
+    <script>
+       console.log(document.body.firstElementChild);
+       console.log(document.body.firstElementChild.nextElementSibling);
+       console.log(document.body.firstElementChild.nextElementSibling.nextElementSibling);
+       console.log(document.body.firstElementChild.nextElementSibling.nextElementSibling.previousElementSibling);
+       console.log(document.body.firstElementChild.nextElementSibling.nextElementSibling.previousElementSibling.previousElementSibling);
+
+       //explore
+       console.log(document.body.children[0]);
+       console.log(document.body.children[2]);
+       document.body.children[1].firstElementChild.children[3]
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS On string</title>
+</head>
+<body>
+    <script>
+        //includes() method is used to check if a string contains a specific substring. 
+        //It returns true if the substring is found within the string, and false otherwise. 
+        //case sensitive
+        let name = "Masum is a funny boy";
+        let ck = name.includes("funny"); //true bcz funny is available in the sentence
+        console.log(ck);
+        let ck2 = name.includes("yakka"); //false bcz yakka is not available in the sentence
+        console.log(ck2);
+
+        let name5 = "hello world";
+        console.log(name5.includes('hello', 0)) //true bcz starting index is 0
+        console.log(name5.includes('hello', 5)) //false bcz starting index is not  0
+
+        // startsWith() and endsWith() methods
+        let msg = "Masum and sopna are spouse";
+        console.log(msg.startsWith("Masum", 0)) //true
+        console.log(msg.endsWith("spouse", msg.length)); //true
+
+        // Q- "please give tk 1000" print 1000
+        let tk = "please give tk 1000";
+        console.log(tk.indexOf(1000));
+        let substr = tk.substr(15,tk.length);
+        substr = Number.parseInt(substr);
+        console.log(substr);
+        console.log(typeof substr)
+        
+        let again = tk.slice("please give tk ".length);
+        again = Number.parseInt(again);
+        console.log(again);
+        console.log(typeof again)
+
+        // try to change 4th char of a string 
+        let ch = "Change";
+        ch[3] = "R";
+        console.log(ch); //ch not changed because string is immutable
+        
+        // let str = "A quick brown fox jumps over the lazy dog";
+        // let check = str.includes('quick');
+        // console.log(check? "the word is" :"the word is not", " in the sentence");
+
+        // let again = str.includes("masum");
+        // console.log(again? "the word is":"the word is not", " In the sentence");
+        // console.log(str.includes('fun')? "the word is":"the word is not", " in the sentence");
+    </script>
+</body>
+</html>

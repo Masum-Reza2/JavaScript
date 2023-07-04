@@ -1,0 +1,22 @@
+#btn {
+    text-align: center;
+    font-size: 2rem;
+    color: red;
+    text-shadow: 2px 2px 2px black;
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+    padding: 4px 15px;
+    cursor: pointer;
+}
+
+.wow {
+    text-align: center;
+    font-size: 2rem;
+    color: red;
+    text-shadow: 2px 2px 2px black;
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+    padding: 4px 15px;
+}

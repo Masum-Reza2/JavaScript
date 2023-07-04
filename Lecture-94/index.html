@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="input.css">
+</head>
+
+<body class="bg-gray-300">
+    <img src="./icons8-alarm-clock.gif" alt="Alarm Clock" class="w-20 m-auto mt-20 rounded-lg shadow-red-500 shadow-lg">
+
+    <div class="flex flex-row space-x-5 justify-center items-center mt-5">
+
+        <div id="hour"
+            class="h-16 w-36 bg-purple-700 rounded-lg shadow-lg shadow-black hover:-translate-y-2 text-center justify-center items-center flex font-bold text-3xl cursor-pointer text-white">
+            Hours</div>
+        <div id="minutes"
+            class="h-16 w-36 bg-red-500 rounded-lg shadow-lg shadow-black hover:-translate-y-2 text-center justify-center items-center flex font-bold text-3xl cursor-pointer text-white">
+            Minutes</div>
+        <div id="seconds"
+            class="h-16 w-36 bg-indigo-500 rounded-lg shadow-lg shadow-black hover:-translate-y-2 text-center justify-center items-center flex font-bold text-3xl cursor-pointer text-white">
+            seconds</div>
+
+        <div id="amORpm"
+            class="h-16 w-36 bg-green-500 rounded-lg shadow-lg shadow-black hover:-translate-y-2 text-center justify-center items-center flex font-bold text-3xl cursor-pointer m-auto text-red-500">
+            Am/Pm</div>
+    </div>
+
+    <div class="flex flex-row space-x-5 justify-center items-center mt-20">
+        <label for="alarmTime"
+            class="bg-white h-10 font-bold text-red-500 text-center items-center justify-center flex w-28 rounded-lg shadow-md shadow-red-400 border-none cursor-pointer hover:-translate-y-1">Set Seconds :</label>
+        <input
+            class="bg-white h-10 text-center items-center justify-center flex w-12 rounded-lg shadow-md shadow-black border-none cursor-pointer hover:-translate-y-1"
+            type="number" id="lelo">
+        </div>
+        <button
+            class="bg-blue-600 font-bold h-10 text-center items-center justify-center flex w-36 rounded-lg shadow-md shadow-black border-none cursor-pointer hover:-translate-y-1 m-auto mt-10 text-orange-300 text-xl"
+            onclick="setAlarm()">Set Alarm</button>
+        <div
+            class="bg-white font-bold text-lg h-10 text-center text-yellow-400 items-center justify-center flex w-80 rounded-lg shadow-lg shadow-black border-none cursor-pointer hover:-translate-y-1 m-auto mt-10" id="start">Alarm starts in -</div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

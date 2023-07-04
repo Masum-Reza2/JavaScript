@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS on arrays</title>
+</head>
+
+<body>
+    <script>
+        //create an array of number and take input from the user to add numbers to this array.
+        // let myarray = [1, 2, 3];
+        // let a = prompt("Enter a number");
+        // a = Number.parseInt(a);
+        // myarray.push(a);
+        // console.log(myarray);
+
+        //create an array of number and take input from the user untill 0 is inserted.
+        // let myarray = [1, 2, 3];
+        // let a = 0;
+        // do {
+        //     a = prompt("Enter a number");
+        //     a = Number.parseInt(a);
+        //     myarray.push(a);
+        // } while (a != 0);
+        // console.log(myarray)
+
+        //create an array and filter numbers divisible by 10
+        // let div = [1, 7, 4, 3, 70, 30, 50, 560, 43, 65, 67, 78];
+        // let divisible = div.filter((x)=>{
+        //     return x%10==0;
+        // })
+        // console.log(divisible);
+
+        //create an array of square of given numbers
+        // let formal = [2,4,3,9];
+        // let sqarr = formal.map((element)=>{
+        //     return element*element;
+        // });
+        // console.log("The square value of the array is ",sqarr);
+
+        //create factorial array from a given natural number of array array
+        let n = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        let factorial_array = n.reduce((a,b)=>{
+            return a*b;
+        });
+        console.log("the result is = ",factorial_array);
+
+    </script>
+</body>
+
+</html>

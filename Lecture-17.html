@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array methods</title>
+</head>
+<body>
+    <script>
+        let myarray = ['banana', 'orange', 'mango', 'jackfruit', 'garrot', 'coconut'];
+        //  Finding the Index of an Element
+        console.log(myarray.indexOf('orange'));
+        console.log(myarray.indexOf('coconut'));
+
+        // Removing Elements from Any Position
+        // .splice()
+        console.log(myarray)
+        console.log(myarray.splice(3,1)); //here first argument for (starting index for deletion) and second argument for deletecount(how many elements are to be delete)
+        console.log(myarray)
+        let yourarray = ['item1', 'item2', 'item3', 'item4', 'item5'];
+        yourarray.splice(2,2) //it will remove item3 and item4
+        console.log(yourarray);
+
+        // Joining Array Elements
+        console.log(yourarray.join("_"));
+        console.log(yourarray.join("~~~"));
+        console.log(yourarray.join(","));
+
+        // Copying an Array slice() method
+        let myarray2 = ['item1', 'item2', 'item3', 'item4', 'item5', 'item6']
+        console.log(myarray2.slice());
+        console.log(myarray2);
+
+        // Iterating over an Array
+        myarray2.forEach(element => {
+            console.log(element, "is a ", typeof element)
+        });
+
+        // converting to string
+        let myarr5 = ['item1', 'item2', 'item3', 'item4', 'item5', 'item6'];
+        myarr5 = myarr5.toString();
+        console.log(typeof myarr5);
+    </script>
+</body>
+</html>

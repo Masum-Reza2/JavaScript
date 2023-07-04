@@ -1,0 +1,57 @@
+body {
+    background-color: rgb(186, 248, 248);
+}
+
+h1 {
+    color: red;
+    text-shadow: 2px 2px 2px greenyellow;
+    text-align: center;
+}
+button{
+    font-size: 1.4rem;
+    margin: 3px 4px;
+    color: red;
+    background-color: white;
+    border-radius: 8px;
+    padding: 4px 10px;
+    cursor: pointer;
+    text-shadow: 2px 2px 2px black;
+}
+button:hover{
+    text-shadow: 3px 3px 3px black;
+}
+.btn-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.waiting{
+    color: black;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 70px;
+    text-shadow: 2px 2px 2px red;
+}
+.clock{
+    display: flex;
+    /* border: 2px solid red; */
+    text-align: center;
+    width: 200px;
+    margin: 80px auto;
+    height: 70px;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    background-color: darkturquoise;
+    text-shadow: 2px 2px 2px red;
+    font-size: 1.8rem;
+}
+.autoText{
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 2px 2px 2px red;
+}
+.dark{
+    color: black;
+    text-shadow: 2px 2px 2px red;
+}

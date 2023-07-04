@@ -1,0 +1,41 @@
+#first{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center ;
+    text-shadow: 2px 2px 2px red;
+}
+button{
+    /* border: 2px solid red; */
+    border-radius: 8px;
+    cursor: pointer;
+    text-shadow: 2px 2px 2px white;
+    color: red;
+    background-color: black;
+    padding: 5px 20px;
+    font-size: 2rem;
+}
+button:hover{
+    border-radius: 8px;
+    cursor: pointer;
+    text-shadow: 2px 2px 2px yellow;
+    color: white;
+    background-color: black;
+    padding: 5px 20px;
+    font-size: 2rem;
+}
+#writeMe{
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 2px 2px 2px red;
+    margin-top: 50px;
+}
+.blue{
+    border-radius: 8px;
+    cursor: pointer;
+    text-shadow: 2px 2px 2px white;
+    color: blue;
+    background-color: black;
+    padding: 5px 20px;
+    font-size: 2rem;
+}

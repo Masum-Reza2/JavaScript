@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map,filter and reduce in js</title>
+</head>
+
+<body>
+    <script>
+        let myarray = [3, 5, 8, 4, 7, 8, 86, 4, 33, 2, 2];
+        // let forarray = myarray.forEach((element,index, array)=>{
+        //     console.log("this is the details of array ",element, index, array);
+        //     return element+1
+        // })
+        // console.log(forarray); //undefind it will never creat a new array
+        ////////////////////in both we can pass 03 arguments////////////
+
+        // map() method
+        //map creates a new array with some operation facilities.
+        let newarray = myarray.map((element, index, array) => {
+            console.log(element)
+            // return element + index
+            // return element + array
+            return element * element //and so on
+        });
+        console.log(newarray); //this will creat a new array with the return values
+
+        // filter() method 
+        let filarray = [22, 34, 5, 6, 32, 65, 8, 9, 5, 8, 26, 87, 42,]
+        let arr = filarray.filter((element) => {
+            // return element>10
+            // return element<10 
+            return (element > 10 && element < 30)//we can set conditions and so on 
+        })
+        console.log("The filtered array is = ", arr);
+
+        //reduce () method just like arithmatic opt
+        let ex = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        let nrdc = ex.reduce((a, b) => {
+            return a + b;
+            // return a-b;
+            // return a*b
+            // return a/b //and so on
+        })
+        console.log(nrdc);
+    </script>
+</body>
+
+</html>

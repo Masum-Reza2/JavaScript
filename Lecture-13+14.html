@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String, template literals and escape sequence charecters</title>
+</head>
+
+<body>
+    <script>
+        // >>> In JavaScript, a string is a sequence of characters enclosed in single quotes ('') or double quotes ("")
+        let greeting = "hello world!";
+        console.log(greeting);
+
+        // template literals and string interpolation
+        let name1 = "Masum";
+        let name2 = "Sopna";
+        let sentence = `${name1} and ${name2} are husband and wife`;
+        console.log(sentence);
+
+        // length
+        console.log(sentence.length);
+        console.log(greeting.length);
+
+        // concatenation that means addition(+) 2 ways
+        let concate = (name1 + name2);
+        console.log(concate);
+        let add = name1.concat(name2);
+        console.log(add);
+
+        // Accessing characters  access individual characters in a string using square brackets 
+        //and the index of the character 
+        //(indexing starts from 0):
+        let char = "A quick brown fox jumps over the lazy dog";
+        console.log(char[0]);
+        console.log(char[3]);
+        console.log(char[5]);
+
+        // Substring
+        console.log(char.substr(10, 20));
+        console.log(char.substring(17, char.length))
+
+        // Case conversion:
+        console.log(char.toUpperCase());
+        console.log(char.toLowerCase());
+
+        // Searching
+        // search brown fox and substring it 
+        console.log(char.indexOf("brown"));
+        console.log(char.lastIndexOf("jump"));
+        console.log(char.substring(char.indexOf("brown"), char.indexOf("jump"))
+        )
+        console.log(char.substring(8, 18));
+
+        // replacing substring
+        let str = "We should do yakka everyday";
+        let substr = str.replace("yakka", "hard-work")
+        console.log(substr);
+
+        // splitting into array
+        console.log(str.split(", "))
+
+        // trimming whitespaces
+        let trimmsg = "     Failiure is the             piller of           success";
+        killspace = trimmsg.trim();
+        console.log(killspace);
+
+        // string comparission 
+        //the comparison is performed based on lexicographic (dictionary) order.
+        let a = "Apple";
+        let b = "Banana";
+        a > b //false note:here alphabate in a = 5 and in b = 6 so basically 6 is greater than 5.
+        a < b //true
+        b > a //true
+        a == b //false
+        a != b //true
+        a === b //false
+        a !== b //true
+        a !== b //true
+        a === 'Apple' //true
+
+        // string converting
+        let num = 52;
+        let con = num.toString();
+        console.log(typeof num);
+        console.log(typeof con);
+
+
+        // ESCAPE SEQUENCE CHARECTERS
+        //      \n - Newline
+        //      \t - Tab
+        //      \b - Backspace
+        //      \r - Carriage Return
+        //      \ - Backslash (path)
+        //      \uXXXX - Unicode Escape (emoji)
+
+        //      \f - Form Feed
+        //      \v - Vertical Tab
+        //      \0 - Null Character
+        //      \xXX - Hexadecimal Escape
+        //      \u{XXXXX} - Unicode Code Point Escape
+        
+        // practice
+        console.log("Failure \n is the \n piller of \n succes");
+        console.log("Failure \t is the \t piller of \t succes");
+        console.log("Failure \b is the \b piller of \b succes");
+        console.log("Failure \\ is the \\ piller of \\ succes");
+        console.log("\u2665");
+
+        // >>> double/single quote inside double/single quote 
+        let name4 = "Ma\"sum";
+        let name5 = 'taq\'bir';
+        let message = `${name4} and ${name5} are brothers`
+        console.log(message);
+
+        // Q-use for loop to print a string
+        let lp = "Masum is a good boy";
+        for (let i=0; i<lp.length; i++) {
+            console.log(lp[i]);
+        }
+        // using for in
+        for (let key in lp) {
+            console.log(lp[key]);
+        }
+
+        </script>
+</body>
+
+</html>

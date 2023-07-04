@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console methods in js</title>
+</head>
+
+<body>
+    <script>
+        // console.log(console);
+        // console.log(): This method is used to output a message to the console. 
+        // It can accept multiple arguments, and it prints them as a comma-separated list.
+        console.log("Hello", "World", 3);
+
+        //console.error(): Use this method to log an error message to the console. 
+        //It is typically used to report and track errors in your code.
+        console.error("Hey masum error occured");
+
+        //console.warn(): This method logs a warning message to the console. 
+        //It is similar to console.error() but is used to indicate potential issues or problems that may not be critical.
+        console.warn("hey stay safe something going to be unfair");
+
+        //console.info(): Use this method to log informational messages to the console. 
+        //It is often used to provide additional details or context about a particular situation
+        console.info("this is an information");
+
+        //console.clear(): This method clears the console, removing any previously logged messages or errors.
+        // console.clear();
+
+        // console.table(): Use this method to display tabular data in the form of a table.
+        //the most usefull console
+        let data = [
+            { name: 'John', age: 25, country: 'USA' },
+            { name: 'Jane', age: 30, country: 'Canada' },
+            { name: 'Tom', age: 22, country: 'Australia' }
+        ]
+        console.table(data);
+
+        //console.assert(): This method is used to test if a condition is true. 
+        //If the condition is false, it will display an error message.
+        console.assert(1 > 2); //assertion error
+        console.assert(1 < 2); //now no-problem
+
+        //console.group() and console.groupEnd(): These methods are used 
+        //to group console log statements together under a collapsed group in the console.
+        console.group("Group-1")
+        console.log("Message1")
+        console.log("Message2")
+        console.groupEnd();
+
+        console.group("Group-2")
+        console.log("Message3")
+        console.log("Message4")
+        console.groupEnd();
+
+        // console.time() and console.timeEnd(): These methods are used to measure the time it takes 
+        //to execute a particular block of code.
+        console.time('for loop executing time');
+        for (let i = 0; i < 10; i++) {
+            console.log(i);
+        }
+        console.timeEnd('for loop executing time');
+
+        // console.trace(): This method is used to print a stack trace to the console, 
+        //showing the call path of the current execution context.
+        let foo = () => console.trace();
+        let bar = () => foo();
+        bar();
+    </script>
+</body>
+
+</html>

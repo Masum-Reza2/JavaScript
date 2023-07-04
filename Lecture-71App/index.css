@@ -1,0 +1,11 @@
+#contest{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 1rem;
+}
+.setup{
+    font: bold;
+    height: 300px;
+    line-height: 7px;
+    text-align: center;
+}
