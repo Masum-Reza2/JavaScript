@@ -37,6 +37,30 @@
         //     console.log("Sorry we can't adopt result less than 90", "You scored ", 100 - myarray.length);
         // }
         // console.log("You have tried ", myarray.length, " times");
+
+
+
+
+        // reversion
+        let ran_number = Math.floor(50 + (55 - 50) * Math.random());
+        let myarray = [];
+
+        let U_input;
+        do {
+            U_input = prompt('Enter a number');
+            U_input = Number.parseInt(U_input);
+            myarray.push(U_input);
+            if (U_input > ran_number) {
+                alert('Your enter greater than the random number. Try agin!')
+            }
+            else if (U_input < ran_number) {
+                alert('you enter smaller than the random number. Try again!')
+            }
+        } while (U_input != ran_number);
+        console.log(`You tried ${myarray.length} times`);
+        let result = 100 - myarray.length;
+        console.log(`Your result ${result}`);
+        console.log(result >= 90 ? 'congratulations you are selected' : 'Sorry we can\'t adopt number less than 90')
     </script>
 </body>
 
